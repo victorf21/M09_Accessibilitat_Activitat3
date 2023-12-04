@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina web</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://wave.webaim.org/toolbar/wavetoolbar.js" defer></script>
   </head>
 
   <body>
-    <div class="header">
-      <div class="titol_7" >Les receptes de l'àvia</div>
-    </div>
+    <header class="header">
+      <div class="titol_7">Les receptes de l'àvia</div>
+    </header>
 
     <div class="nav">
       <ul>
@@ -21,10 +20,13 @@
         <li><a href="#">Segons</a></li>
         <li><a href="#">Postres</a></li>
       </ul>
-      <form class="search">
-        <input type="search" name="q" placeholder="Search query">
+      <form action="/tu/accion/de/formulario" method="get">
+        <label for="searchQuery" title="Caja de texto de búsqueda">Buscar:</label>
+        <input type="search" id="searchQuery" name="q" placeholder="Escribe tu búsqueda" title="Caja de texto de búsqueda">
         <input type="submit" value="Go!">
       </form>
+      
+      
     </div>
     <main>
       <article>
@@ -46,11 +48,11 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugiat dicta, pariatur laboriosam fugit numquam, aliquid, excepturi eligendi quo laudantium fuga quae ipsam modi repellendus vero illum voluptas assumenda quas.
         </p>
-        <img src="media/img1.jpg" width="500">
+        <img src="media/img1.jpg" width="500" alt="Foto de la crema">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corrupti culpa nisi eos molestias ipsa, tempore aliquam numquam possimus! Facilis libero debitis dolor repellat mollitia aperiam ducimus hic quis reiciendis!
         </p>
-        <img src="media/img2.jpg" width="500">
+        <img src="media/img2.jpg" width="500" alt="Foto del pastel de plátano">
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, illo iste. Consequuntur, ad doloribus repellat et odit, ratione suscipit totam ea laborum inventore animi magni numquam, ut quisquam? Modi, dicta.
         </p>
@@ -67,25 +69,26 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium laudantium aliquid modi, fugiat iure quaerat nulla voluptates numquam et voluptatem beatae dolor neque nesciunt in aperiam placeat. Nisi, sequi!
             </p>
             <div class="titol_5">Contacte</div>
-            <a href="/contacte"><img src="media/img3.jpg" width="65"></a>
+            <a href="/contacte"><img src="media/img3.jpg" width="65" alt="Icono de teléfono de contacto"></a>
         </aside>
         <section class="comments">
           <div class="comment-wrapper">
             <div class="titol_5">Afegir comentari</div>
 
-            <form class="comment-form">
+            <form class="comment-form" action="/tu/accion/de/formulario" method="post">
               <div class="flex-pair">
-                Nom:
-                <input type="text" name="name" id="name" placeholder="Nom">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" title="Caja de texto para poner nombre" >
               </div>
               <div class="flex-pair">
-                Comentari:
-                <input type="text" name="comment" id="comment" placeholder="Comentari">
+                <label for="comment">Comentario:</label>
+                <input type="text" id="comment" name="comment" placeholder="Ingresa tu comentario" title="Caja de texto para poner comentario">
               </div>
               <div>
-                <input type="submit" value="Submit comment">
+                <input type="submit" value="Enviar comentario">
               </div>
             </form>
+            
 
             <div class="titol_5">Comments</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A provident, quam, ut, eos inventore eligendi nulla voluptatum cupiditate maiores culpa ex facere porro accusantium quos ullam enim corrupti quae quasi.</p>
@@ -95,13 +98,13 @@
       <div class="secondary">
         <div class="titol_6">Altres receptes</div>
         <div class="tit2"><a href="/pinya">Pastís de pinya</a></div>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam, ipsum incidunt natus expedita sit totam voluptate nemo maiores blanditiis consequuntur quod eos debitis nam amet unde nihil suscipit beatae.
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam, ipsum incidunt natus expedita sit totam voluptate nemo maiores blanditiis consequuntur quod eos debitis nam amet unde nihil suscipit beatae.</p>
         <div class="tmes"><a href="">Veure més....</a></div>
         <div class="tit2"><a href="/xococolata">Pastís de xocolata</a></div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores labore veniam provident cum libero ad consectetur facere consequatur, nihil laboriosam ab necessitatibus repudiandae assumenda fuga iure debitis suscipit tempora?
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam, ipsum incidunt natus expedita sit totam voluptate nemo maiores blanditiis consequuntur quod eos debitis nam amet unde nihil suscipit beatae.</p>
         <div class="tmes"><a href="">Veure més....</a></div>
          <div class="tit2"><a href="/pastanaga">Pastís de pastanaga</a></div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sed ratione corrupti magnam cum nam ipsam? Magnam maiores amet nulla corporis repellat quas ducimus eos optio tenetur beatae, dolorem perferendis.
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam, ipsum incidunt natus expedita sit totam voluptate nemo maiores blanditiis consequuntur quod eos debitis nam amet unde nihil suscipit beatae.</p>
         <div class="tmes"><a href="">Veure més....</a></div> 
       </div>
     </main>
